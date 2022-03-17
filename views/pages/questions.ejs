@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<main class="main" id="main">
+    <% data.forEach(item=>{ %>
+        <h2 class="question"><%= item.question %></h2>
+        <div class="poss-answer-div">
+            <% item.possibleAnsers.forEach(answer=>{ %>
+                <p class="poss-answers"><%= answer %></p>
+            <% }) %>     
+        </div>
+    <% }) %> 
+</main>
+
+<%- include('../partials/footer') %> 

@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<main class="main" id="main">
+    <div class="single-poss-answer-div">
+        <% data.possibleAnsers.forEach(answer=>{ %>
+            <button class="single-poss-answers" data-poss-answer="<%= answer %> "><%= answer %></button>
+        <% }) %>
+        <p class="answer" data-correct-answer="<%= data.correctAnswer %>"></p>
+    </div>
+    <% if(pageId<35){pageId=parseInt(pageId)+1} else{ pageId=1} %>
+    <a href="/trivia/<%= pageId %>">next</a>
+</main>
+
+<%- include('../partials/footer') %> 

@@ -1,0 +1,49 @@
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+}
+
+.top-nav{
+    display: block;
+    text-align: center;
+}
+
+.top-nav-item{
+    padding: 0 6px;
+    margin: 0;
+    
+    border-right: 1px solid red;
+}
+
+.top-nav-item:last-child{
+    border-right: none;
+}
+
+.episode-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.episode-section{
+    margin: 20px;
+    padding: 0;
+    width: calc(100%/5);
+    border: 2px solid white;
+}
+
+.single-poss-answers:hover{
+    color: red;
+    transition: 2s;
+}
+

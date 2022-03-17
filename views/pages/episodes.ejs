@@ -1,0 +1,14 @@
+<%- include('../partials/header') %>
+
+<main class="main episode-main" id="main">
+    <% data.forEach(item=>{ %>
+        <div class="episode-section">
+            <p class="id">id: <%= item.id %></p>
+            <p class="episode-title">Title: <%= item.Title %></p>
+            <p class="season">Season: <%= item.Season %></p>
+            <p class="num-in-season">Number in season: <%= item.NumInSeason %></p>
+        </div>
+    <% }) %> 
+</main>
+
+<%- include('../partials/footer') %> 
